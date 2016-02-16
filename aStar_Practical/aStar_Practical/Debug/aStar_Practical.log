@@ -1,0 +1,31 @@
+﻿Build started 16/02/2016 16:13:00.
+     1>Project "C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\aStar_Practical\aStar_Practical.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (aStar_Practical.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\+.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\main.cpp(82): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\main.cpp(275): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\main.cpp(288): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\graph.h(530): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+                 c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\graph.h(487) : while compiling class template member function 'void Graph<std::string,int>::aStar(GraphNode<std::string,int> *,GraphNode<std::string,int> *,void (__cdecl *)(GraphNode<std::string,int> *),std::vector<GraphNode<std::string,int> *,std::allocator<_Ty>> &)'
+                 with
+                 [
+                     _Ty=GraphNode<std::string,int> *
+                 ]
+                 c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\main.cpp(143) : see reference to function template instantiation 'void Graph<std::string,int>::aStar(GraphNode<std::string,int> *,GraphNode<std::string,int> *,void (__cdecl *)(GraphNode<std::string,int> *),std::vector<GraphNode<std::string,int> *,std::allocator<_Ty>> &)' being compiled
+                 with
+                 [
+                     _Ty=GraphNode<std::string,int> *
+                 ]
+                 c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\main.cpp(66) : see reference to class template instantiation 'Graph<std::string,int>' being compiled
+     1>c:\users\c00179413\desktop\a-star practical\astar_practical\astar_practical\graph.h(573): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\Debug\+.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.3.2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\Debug\+.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\Debug\+.lib" /MACHINE:X86 Debug\main.obj
+         Debug\stdafx.obj
+         aStar_Practical.vcxproj -> C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\Debug\+.exe
+     1>Done Building Project "C:\Users\C00179413\Desktop\A-star Practical\aStar_Practical\aStar_Practical\aStar_Practical.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.63
