@@ -127,6 +127,7 @@ int main()
 			{
 				myGraph.nodeArray()[i]->setCostDist(999999);
 				myGraph.nodeArray()[i]->setEstGoalDist(0);
+				myGraph.nodeArray()[i]->setPrevNode(nullptr);
 				nodes[i].first.setFillColor(sf::Color::White);
 			}
 		}
@@ -147,6 +148,9 @@ int main()
 			{
 				originFound = false;
 				goalFound = false;
+				origin = 0;
+				goal = 0;
+				vecpath.clear();
 			}
 		}
 		else if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
@@ -315,7 +319,7 @@ std::pair<sf::VertexArray, sf::Text> SetupEdges(sf::Vector2f from, sf::Vector2f 
 }
 
 /*
-“I declare that the work I am submitting for assessing by the Institute examiner(s) is entirely my own
+Â“I declare that the work I am submitting for assessing by the Institute examiner(s) is entirely my own
 work, save for any portion(s) thereof where the author or source has been duly referenced and
-attributed. Signed: Anthony O'Sullivan & C00179413”
+attributed. Signed: Anthony O'Sullivan & C00179413Â”
 */
